@@ -12,7 +12,7 @@ public class SpyAgency {
         } else {
             System.out.println("Palindrome: No");
         }
-        
+
         int vowels = 0, consonants = 0;
 
         for (char ch : message.toLowerCase().toCharArray()) {
