@@ -7,7 +7,7 @@ public class SchoolResultPortal {
         String outputFile = "reportcard.txt";
 
         try (
-                
+
                 BufferedReader br = new BufferedReader(new FileReader(inputFile));
                 BufferedWriter bw = new BufferedWriter(
                         new FileWriter(outputFile, true))
