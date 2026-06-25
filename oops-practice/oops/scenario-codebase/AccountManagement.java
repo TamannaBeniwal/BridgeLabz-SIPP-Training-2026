@@ -1,4 +1,4 @@
-class BankAccount {
+class Account {
 
     private int accountNumber;
     private String holder;
@@ -6,7 +6,7 @@ class BankAccount {
 
     static int totalAccounts = 0;
 
-    public BankAccount(int accountNumber, String holder, double balance) {
+    public Account(int accountNumber, String holder, double balance) {
         this.accountNumber = accountNumber;
         this.holder = holder;
         this.balance = balance;
@@ -34,12 +34,12 @@ class BankAccount {
     }
 }
 
-public class BankDemo {
+public class AccountManagement {
     public static void main(String[] args) {
 
-        BankAccount acc1 = new BankAccount(101, "Rahul", 10000);
-        BankAccount acc2 = new BankAccount(102, "Priya", 15000);
-        BankAccount acc3 = new BankAccount(103, "Aman", 20000);
+        Account acc1 = new Account(101, "Rahul", 10000);
+        Account acc2 = new Account(102, "Priya", 15000);
+        Account acc3 = new Account(103, "Aman", 20000);
 
         acc1.deposit(2000);
         acc1.withdraw(1000);
@@ -63,6 +63,6 @@ public class BankDemo {
         acc2.getStatement();
         acc3.getStatement();
 
-        System.out.println("\nTotal Accounts Created = " + BankAccount.totalAccounts);
+        System.out.println("\nTotal Accounts Created = " + Account.totalAccounts);
     }
 }
