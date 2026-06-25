@@ -1,8 +1,8 @@
-public class Rectangle extends Shape {
+public class Rect extends Shap {
     private double length;
     private double width;
 
-    public Rectangle(double length, double width) {
+    public Rect(double length, double width) {
         this.length = length;
         this.width = width;
     }

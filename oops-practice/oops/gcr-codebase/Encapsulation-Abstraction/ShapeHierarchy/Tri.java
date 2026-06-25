@@ -1,7 +1,7 @@
-public class Triangle extends Shape {
+public class Tri extends Shap {
     private double a, b, c;
 
-    public Triangle(double a, double b, double c) {
+    public Tri(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;

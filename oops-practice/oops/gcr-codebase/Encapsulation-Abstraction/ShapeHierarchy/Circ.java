@@ -1,7 +1,7 @@
-public class Circle extends Shape {
+public class Circ extends Shap {
     private final double radius;
 
-    public Circle(double radius) {
+    public Circ(double radius) {
         this.radius = radius;
     }
 
