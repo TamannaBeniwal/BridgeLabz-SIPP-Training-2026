@@ -1,10 +1,9 @@
-class Vehicle {
+class ParkedVehicle {
     private String vehicleNumber;
     private String ownerName;
     private String vehicleType;
 
-
-    public Vehicle(String vehicleNumber, String ownerName, String vehicleType) {
+    public ParkedVehicle(String vehicleNumber, String ownerName, String vehicleType) {
         this.vehicleNumber = vehicleNumber;
         this.ownerName = ownerName;
         this.vehicleType = vehicleType;
@@ -23,20 +22,18 @@ class Vehicle {
 
 public class ParkingManagement {
 
-
-    public static void displayCars(Vehicle[] vehicles) {
-        System.out.println("\n CARS ");
-        for (Vehicle v : vehicles) {
+    public static void displayCars(ParkedVehicle[] vehicles) {
+        System.out.println("\n=== CARS ===");
+        for (ParkedVehicle v : vehicles) {
             if (v.getVehicleType().equalsIgnoreCase("Car")) {
                 v.displayDetails();
             }
         }
     }
 
-
-    public static void displayBikes(Vehicle[] vehicles) {
+    public static void displayBikes(ParkedVehicle[] vehicles) {
         System.out.println("\n=== BIKES ===");
-        for (Vehicle v : vehicles) {
+        for (ParkedVehicle v : vehicles) {
             if (v.getVehicleType().equalsIgnoreCase("Bike")) {
                 v.displayDetails();
             }
@@ -45,20 +42,18 @@ public class ParkingManagement {
 
     public static void main(String[] args) {
 
-        // Store 10 vehicles in an array
-        Vehicle[] vehicles = new Vehicle[10];
+        ParkedVehicle[] vehicles = new ParkedVehicle[10];
 
-        vehicles[0] = new Vehicle("UP81AB101", "Rahul", "Car");
-        vehicles[1] = new Vehicle("UP81AB102", "Priya", "Bike");
-        vehicles[2] = new Vehicle("UP81AB103", "Aman", "Car");
-        vehicles[3] = new Vehicle("UP81AB104", "Neha", "Bike");
-        vehicles[4] = new Vehicle("UP81AB105", "Rohit", "Car");
-        vehicles[5] = new Vehicle("UP81AB106", "Simran", "Bike");
-        vehicles[6] = new Vehicle("UP81AB107", "Karan", "Car");
-        vehicles[7] = new Vehicle("UP81AB108", "Pooja", "Bike");
-        vehicles[8] = new Vehicle("UP81AB109", "Vikas", "Car");
-        vehicles[9] = new Vehicle("UP81AB110", "Anjali", "Bike");
-
+        vehicles[0] = new ParkedVehicle("UP81AB101", "Rahul", "Car");
+        vehicles[1] = new ParkedVehicle("UP81AB102", "Priya", "Bike");
+        vehicles[2] = new ParkedVehicle("UP81AB103", "Aman", "Car");
+        vehicles[3] = new ParkedVehicle("UP81AB104", "Neha", "Bike");
+        vehicles[4] = new ParkedVehicle("UP81AB105", "Rohit", "Car");
+        vehicles[5] = new ParkedVehicle("UP81AB106", "Simran", "Bike");
+        vehicles[6] = new ParkedVehicle("UP81AB107", "Karan", "Car");
+        vehicles[7] = new ParkedVehicle("UP81AB108", "Pooja", "Bike");
+        vehicles[8] = new ParkedVehicle("UP81AB109", "Vikas", "Car");
+        vehicles[9] = new ParkedVehicle("UP81AB110", "Anjali", "Bike");
 
         displayCars(vehicles);
         displayBikes(vehicles);
